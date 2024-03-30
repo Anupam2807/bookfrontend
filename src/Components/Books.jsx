@@ -21,7 +21,7 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${window.location.origin}/delete/` + id);
+      await axios.delete(`https://bookmanagement-ulut.onrender.com/delete/` + id);
       window.location.reload();
     } catch (error) {
       console.log(error);
