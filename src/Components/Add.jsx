@@ -20,7 +20,7 @@ const Add = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`https://bookmanagementbackend-kt84.onrender.com/add`, books);
+      await axios.post(`https://bookmanagement-ulut.onrender.com/add`, books);
       Navigate("/books");
     } catch (e) {
       console.log(e);

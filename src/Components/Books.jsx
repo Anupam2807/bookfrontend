@@ -10,7 +10,7 @@ const Books = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const res = await axios.get("https://bookmanagementbackend-kt84.onrender.com//books");
+        const res = await axios.get("https://bookmanagement-ulut.onrender.com/books");
         setBooks(res.data.books);
       } catch (err) {
         console.log(err);

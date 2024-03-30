@@ -17,7 +17,7 @@ const Update = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const res = await axios.get(`https://bookmanagementbackend-kt84.onrender.com/update/${id}`); 
+        const res = await axios.get(`https://bookmanagement-ulut.onrender.com/update/${id}`); 
         setBooks(res.data); 
       } catch (error) {
         console.log(error);
